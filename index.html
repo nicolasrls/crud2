@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"></link>
+    <title>Formulário de Cadastro</title>
+</head>
+<body>
+<div class="container">
+    <h1> Formulário de cadastro </h1>
+
+    <form action="cadastro.php" method="POST">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <br><br>
+
+        <label for="dataprocedimento">Data do procedimento:</label>
+        <input type="date" id="dataProcedimento" name="dataProcedimento" required>
+
+        <br><br>
+
+        <label for="nome">Procedimento realizado</label>
+        <select name="opcoes" title="Escolha uma opção" required>
+            <option value="limpeza">Limpeza de Pele</option>
+            <option value="preenchimento">Preenchimento</option>
+            <option value="massagem">Massagem Modeladora</option>
+            <option value="ventosa">Ventosa Terapia</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <button class="button   "><a href="listartudo.php">Listar Todos Pacientes</a></button>
+
+    </form>
+</div>
+</body>
+</html>
